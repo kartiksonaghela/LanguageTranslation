@@ -275,17 +275,17 @@ class Transformer(nn.Module):
                 drop_prob, 
                 num_layers,
                 max_sequence_length, 
-                kn_vocab_size,
+                _vocab_size,
                 english_to_index,
-                kannada_to_index,
+                hindi_to_index,
                 START_TOKEN, 
                 END_TOKEN, 
                 PADDING_TOKEN
                 ):
         super().__init__()
         self.encoder = Encoder(d_model, ffn_hidden, num_heads, drop_prob, num_layers, max_sequence_length, english_to_index, START_TOKEN, END_TOKEN, PADDING_TOKEN)
-        self.decoder = Decoder(d_model, ffn_hidden, num_heads, drop_prob, num_layers, max_sequence_length, kannada_to_index, START_TOKEN, END_TOKEN, PADDING_TOKEN)
-        self.linear = nn.Linear(d_model, kn_vocab_size)
+        self.decoder = Decoder(d_model, ffn_hidden, num_heads, drop_prob, num_layers, max_sequence_length, hindi_to_index, START_TOKEN, END_TOKEN, PADDING_TOKEN)
+        self.linear = nn.Linear(d_model, _vocab_size)
         self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
     def forward(self, 
