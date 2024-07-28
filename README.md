@@ -19,12 +19,12 @@ The dataset used for training was collected from Kaggle and model was trained on
 
 The model's configuration can be adjusted in the `config.json` file. Key parameters include:
 
--d_model: 512,
--batch_size: 30,
--ffn_hidden: 2048,
--num_heads: 8,
--drop_prob: 0.1,
--num_layers: 1,
--max_sequence_length: 500,
--vocab_size_hindi: 119,  # Update based on your actual vocabulary size
--vocab_size_english: 71  # Update based on your actual vocabulary size
+- `d_model`: 512,
+- `batch_size`: 30,
+- `ffn_hidden`: 2048,
+- `num_heads`: 8,
+- `drop_prob`: 0.1,
+- `num_layers`: 1,
+- `max_sequence_length`: 500,
+- `vocab_size_hindi`: 119,  # Update based on your actual vocabulary size
+- `vocab_size_english`: 71  # Update based on your actual vocabulary size
