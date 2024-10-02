@@ -28,4 +28,5 @@ The model's configuration can be adjusted in the `config.json` file. Key paramet
 - `max_sequence_length`: 500,
 - `vocab_size_hindi`: 119,  # Update based on your actual vocabulary size
 - `vocab_size_english`: 71  # Update based on your actual vocabulary size
-Medium Article:(["Blog Link"](https://medium.com/@kbs.kartik/transformers-in-action-english-to-hindi-machine-translation-bda8b5cd0897))
+
+## Medium Article:(["Blog Link"](https://medium.com/@kbs.kartik/transformers-in-action-english-to-hindi-machine-translation-bda8b5cd0897))
